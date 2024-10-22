@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -17,17 +15,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- Font -->
-    <link rel="stylesheet" href="css/fonts.css" />
-    <!-- My css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Fawaz | My Portfolio</title>
+    <!-- font -->
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Services | My Portfolio</title>
   </head>
   <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg fixed-top p-0" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand m-0 pt-3 pb-0" href="index.html">Fawaz</a>
+        <a class="navbar-brand m-0 pt-3 pb-0" href="#">Fawaz</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,16 +37,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto text-uppercase">
             <li class="nav-item">
-              <a class="nav-link actived">Home</a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu/services.html">Services</a>
+              <a class="nav-link actived">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu/about.html">About</a>
+              <a class="nav-link" href="../menu/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./menu/contact.html">Contact</a>
+              <a class="nav-link" href="../menu/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -67,54 +65,79 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="./menu/services.html">Services</a>
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link actived">Services</a>
           </li>
           <!-- <li class="nav-item"><a class="nav-link" href="#story">Story</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="../menu/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../menu/contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="overlay" id="overlay"></div>
     <!-- Last Nav -->
-    <!-- Section 1 -->
-    <section class="Home" id="Home">
-      <div class="home-content">
-        <h1>Hi, It's <span>Fawaz</span></h1>
-        <!-- <h3 class="text-animation">I'm a <span></span></h3> -->
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus
-          a maiores ut odio iusto sint eos explicabo nesciunt officia mollitia
-          delectus similique ipsam vitae deserunt, laudantium molestias illo ad.
-        </p>
 
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-        </div>
+    <!-- Section 3 -->
+    <section id="services" class="services m-0 px-0 py-5">
+      <h2 class="heading">Services</h2>
 
-        <div class="btn-group">
-          <a href="#" class="btn">Hire</a>
-          <a href="#Contact" class="btn">Contact</a>
+      <div
+        class="services-container m-0 row d-flex justify-content-center align-items-center"
+      >
+        <!-- box1 -->
+        <div class="service-box col-lg-5 col-md-12">
+          <div class="service-info">
+            <h4>UI Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              laboriosam praesentium ratione fugit, commodi, odio ipsa, sit
+              dignissimos quod quaerat accusantium illo itaque
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="home-img rounded-circle">
-        <img
-          src="img/my-cat.jpg"
-          alt="this image"
-          loading="lazy"
-          class="rounded-circle"
-        />
+        <!-- box2 -->
+        <div class="service-box col-lg-5 col-md-12">
+          <div class="service-info">
+            <h4>Frontend Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              laboriosam praesentium ratione fugit, commodi, odio ipsa, sit
+              dignissimos quod quaerat accusantium illo itaque
+            </p>
+          </div>
+        </div>
+        <!-- box3 -->
+        <div class="service-box col-lg-5 col-md-12">
+          <div class="service-info">
+            <h4>Backend Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              laboriosam praesentium ratione fugit, commodi, odio ipsa, sit
+              dignissimos quod quaerat accusantium illo itaque
+            </p>
+          </div>
+        </div>
+        <!-- box4 -->
+        <div class="service-box col-lg-5 col-md-12">
+          <div class="service-info">
+            <h4>Testing</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+              laboriosam praesentium ratione fugit, commodi, odio ipsa, sit
+              dignissimos quod quaerat accusantium illo itaque
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Last Section 1 -->
-
+    <!-- Last Section 3 -->
     <!-- Footer -->
     <footer class="footer">
       <div class="social">
@@ -133,7 +156,6 @@
       </ul>
       <p class="copyright">&copy; Fawaz | All Rights Reserved 2024</p>
     </footer>
-    <!-- Last Footer -->
     <!-- Boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -145,21 +167,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Initialize AOS -->
-    <script>
-      AOS.init();
-    </script>
     <script src="js/nav.js"></script>
     <script src="js/sc.js"></script>
-
-    <!-- <script>
-      document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-      });
-
-      console.log("Hahaha");
-    </script> -->
   </body>
 </html>
