@@ -528,6 +528,17 @@ span {
 .Contact form .btn {
   margin-top: 2rem;
 }
+/* Untuk browser Webkit (Chrome, Safari, Opera) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Untuk Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 /* footer */
 .footer {
   position: relative;
