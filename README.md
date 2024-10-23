@@ -1,10 +1,10 @@
-#Portfolio website (Recommended for Beginners)
+# Portfolio website (Recommended for Beginners)
 
 ## Overview
 
 This is a personal portfolio website built to showcase my projects, skills, and experiences in web development.
 
-###Technologies Used
+## Technologies Used
 
 This project leverages a variety of modern web technologies to create an optimized, responsive, and visually engaging user experience:
 
