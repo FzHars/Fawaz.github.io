@@ -1,4 +1,4 @@
-# Portfolio website (Recommended for Beginners)
+# Portfolio website
 
 ## Overview
 
@@ -20,3 +20,7 @@ This project leverages a variety of modern web technologies to create an optimiz
 - Responsive design that adapts to all screen sizes.
 - Smooth animations powered by AOS and GSAP.
 - Interactive elements built with JavaScript for dynamic user experiences.
+
+### Recommended for Beginners
+
+Recommended for beginners looking to practice essential web development skills and understand how different technologies work together.
