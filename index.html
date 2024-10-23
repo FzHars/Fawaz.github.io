@@ -56,7 +56,9 @@
     </nav>
     <div id="offcanvasMenu">
       <div class="offcanvas-header">
-        <a class="offcanvas-title mx-auto off-title" href="../index.html">Fawaz</a>
+        <a class="offcanvas-title mx-auto off-title" href="../index.html"
+          >Fawaz</a
+        >
         <button
           data-bs-theme="dark"
           type="button"
@@ -71,7 +73,9 @@
           <li class="nav-item">
             <a class="nav-link" href="./menu/services.html">Services</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="menu/about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu/about.html">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="menu/contact.html">Contact</a>
           </li>
@@ -81,21 +85,26 @@
     <div class="overlay" id="overlay"></div>
     <!-- Last Nav -->
     <!-- Section-->
-    <section class="Home d-flex justify-content-center align-items-center" id="Home">
-      <div class="home-content d-flex justify-content-center align-items-baseline flex-column">
-        <h1 class="lh-1">Hi, It's <span>Fawaz</span></h1>
+    <section
+      class="Home d-flex justify-content-center align-items-center"
+      id="Home"
+    >
+      <div
+        class="home-content d-flex justify-content-center align-items-baseline flex-column"
+      >
+        <h1 class="lh-1 heading">Hi, It's <span>Fawaz</span></h1>
         <!-- <h3 class="text-animation">I'm a <span></span></h3> -->
-        <p>
+        <p class="textx">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus
           a maiores ut odio iusto sint eos explicabo nesciunt officia mollitia
           delectus similique ipsam vitae deserunt, laudantium molestias illo ad.
         </p>
 
-        <div class="social-icons ">
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
+        <div class="social-icons">
+          <a class="cc" href="#"><i class="bi bi-linkedin"></i></a>
+          <a class="cc" href="#"><i class="bi bi-github"></i></a>
+          <a class="cc" href="#"><i class="bi bi-instagram"></i></a>
+          <a class="cc" href="#"><i class="bi bi-facebook"></i></a>
         </div>
 
         <div class="btn-group">
@@ -103,12 +112,17 @@
           <a href="#Contact" class="btn">Contact</a>
         </div>
       </div>
-      <div class="home-img rounded-circle ">
+      <div
+        class="home-img rounded-circle"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <img
           src="img/my-cat.jpg"
           alt="this image"
           loading="lazy"
-          class="rounded-circle "
+          class="rounded-circle"
         />
       </div>
     </section>
@@ -125,12 +139,14 @@
 
       <ul class="p-0 my-0 text-center">
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Testimonials</a></li>
+        <li><a href="./menu/services.html">Services</a></li>
+        <li><a href="./menu/about.html">About Me</a></li>
+        <li><a href="./menu/contact.html">Contact</a></li>
+        <li><a href="./menu/about.html">Testimonials</a></li>
       </ul>
-      <p class="copyright text-center">&copy; Fawaz | All Rights Reserved 2024</p>
+      <p class="copyright text-center">
+        &copy; Fawaz | All Rights Reserved 2024
+      </p>
     </footer>
     <!-- Last Footer -->
     <!-- Boostrap -->
@@ -144,14 +160,30 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Initialize AOS -->
+    <script src="js/nav.js"></script>
     <script>
+      gsap.from(".heading", {
+        duration: 1.5,
+        ease: "slow(0.7, 0.7, false)",
+        y: -100,
+        opacity: 0,
+      });
+      gsap.from(".textx", {
+        duration: 2,
+        ease: "back.out(2)",
+        x: -250,
+        opacity: 0,
+        delay: 0.6,
+      });
       AOS.init();
     </script>
-    <script src="js/nav.js"></script>
-    <script src="js/sc.js"></script>
 
     <!-- <script>
       document.addEventListener("contextmenu", function (e) {

@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!--  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- font -->
     <link rel="stylesheet" href="../css/fonts.css" />
     <!-- css -->
@@ -54,7 +56,9 @@
     </nav>
     <div id="offcanvasMenu">
       <div class="offcanvas-header">
-        <a class="offcanvas-title mx-auto off-title" href="../index.html">Fawaz</a>
+        <a class="offcanvas-title mx-auto off-title" href="../index.html"
+          >Fawaz</a
+        >
         <button
           data-bs-theme="dark"
           type="button"
@@ -92,7 +96,7 @@
         class="services-container m-0 row d-flex justify-content-center align-items-center"
       >
         <!-- box1 -->
-        <div class="service-box col-lg-5 col-md-12">
+        <div class="service-box col-lg-5 col-md-12" data-aos="fade-right">
           <div class="service-info">
             <h4>UI Design</h4>
             <p>
@@ -103,7 +107,7 @@
           </div>
         </div>
         <!-- box2 -->
-        <div class="service-box col-lg-5 col-md-12">
+        <div class="service-box col-lg-5 col-md-12" data-aos="fade-left">
           <div class="service-info">
             <h4>Frontend Development</h4>
             <p>
@@ -114,7 +118,7 @@
           </div>
         </div>
         <!-- box3 -->
-        <div class="service-box col-lg-5 col-md-12">
+        <div class="service-box col-lg-5 col-md-12" data-aos="fade-right">
           <div class="service-info">
             <h4>Backend Development</h4>
             <p>
@@ -125,7 +129,7 @@
           </div>
         </div>
         <!-- box4 -->
-        <div class="service-box col-lg-5 col-md-12">
+        <div class="service-box col-lg-5 col-md-12" data-aos="fade-left">
           <div class="service-info">
             <h4>Testing</h4>
             <p>
@@ -154,7 +158,9 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Testimonials</a></li>
       </ul>
-      <p class="copyright text-center">&copy; Fawaz | All Rights Reserved 2024</p>
+      <p class="copyright text-center">
+        &copy; Fawaz | All Rights Reserved 2024
+      </p>
     </footer>
     <!-- Boostrap -->
     <script
@@ -167,6 +173,22 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      gsap.from(".heading", {
+        duration: 1.5,
+        ease: "slow(0.7, 0.7, false)",
+        y: -100,
+        opacity: 0,
+      });
+      AOS.init({
+        // once: true,
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
+    <script src="../js/ginit.js"></script>
     <script src="../js/nav.js"></script>
   </body>
 </html>
