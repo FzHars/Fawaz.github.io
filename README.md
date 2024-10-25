@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a personal portfolio website built to showcase my projects, skills, and experiences in web development.
+This is a personal portfolio website built to my projects, skills, and experiences in web development.
 
 ## Technologies Used
 
